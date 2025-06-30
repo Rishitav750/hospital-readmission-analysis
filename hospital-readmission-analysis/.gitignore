@@ -1,0 +1,15 @@
+# Data — large raw file, download separately (see data/README.md)
+data/diabetic_data.csv
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
