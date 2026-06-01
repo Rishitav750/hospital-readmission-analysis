@@ -4,6 +4,12 @@ Which diabetic patients end up back in the hospital within 30 days, and why?
 
 I used the UCI Diabetes 130-hospital dataset (about 102k inpatient stays, 1999-2008) to build a model that predicts 30-day readmission and, more usefully, ranks what actually drives it. The honest headline: this is a hard prediction problem. My logistic regression gets a test ROC-AUC of about 0.64, which lines up with what published papers on this dataset report (roughly 0.62 to 0.68). Gradient boosting didn't beat it, so I kept the model you can actually explain.
 
+**View the full analysis (rendered):**
+
+[Notebook 1 - Cleaning & EDA](https://nbviewer.org/github/Rishitav750/hospital-readmission-analysis/blob/main/hospital-readmission-analysis/notebooks/01_data_cleaning_and_eda.ipynb) 
+
+[Notebook 2 - Modeling](https://nbviewer.org/github/Rishitav750/hospital-readmission-analysis/blob/main/hospital-readmission-analysis/notebooks/02_modeling_and_evaluation.ipynb)
+
 ## The data
 
 Diabetes 130-US Hospitals, from the UCI ML Repository. ~101,766 encounters, 50 columns covering demographics, diagnoses, meds, a couple of lab results, and admission/discharge codes. Download notes are in `data/README.md` (the raw CSV is ~19MB so it's gitignored, not committed).
